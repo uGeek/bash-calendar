@@ -42,7 +42,7 @@ cat << EOF
 <hmtl>
 <head>
   <meta charset="UTF-8">
-  <title>Kalendář pro rok $NOW_Y</title>
+  <title>Calendario Año $NOW_Y</title>
   <style type="text/css">
     /* Some generic settings */
     .month {   
