@@ -1,22 +1,15 @@
-# Shell Calendar
+# Bash Calendar
 
+Este es un script de shell simple que generará un calendario HTML con imágenes y una lista opcional de notas.
 
-This is simple shell script that will generate HTML calendar with
-pictures and optional list of notes.
+Archivos que necesitarías primero:
 
-Files you would need first:
+fotos - nombradas 01.jpg- 12.jpg, una por cada mes
+descripciones de la imagen [opcional] - nombrada 01.txt- 12.txt, una por cada mes
+listas opcionales de eventos
 
-- pictures - named `01.jpg` - `12.jpg`, one for every month
-- picture descriptions [optional] - named `01.txt` - `12.txt`, one for every month
-- optional lists of event
-
-## Creating events list
-
-
-Every event list is in separate file with list extension. It contains
-optional style customization and list of events. Events could be
-reoccurring every year or just specific to one year. Here is example list of
-events:
+## Crear lista de eventos
+Cada lista de eventos está en un archivo separado con extensión de lista. Contiene personalización de estilo opcional y lista de eventos. Los eventos podrían volver a ocurrir cada año o solo específicos de un año. Aquí hay una lista de ejemplos de eventos:
 
 ```
 style=color: red;
@@ -26,12 +19,8 @@ style=color: red;
 2017-04-17 Easter Monday
 ```
 
-## Usage
-
-Just put all images in the directory with the script. Optionally put in their
-description and your custom events lists. Then you can simply run the script
-and the script would output html page with calendar for next year. You can
-customize the start by exporting `START` variable. Something like this:
+## Uso
+Simplemente coloque todas las imágenes en el directorio con el script. Opcionalmente ponga su descripción y sus listas de eventos personalizados. Luego, simplemente puede ejecutar el script y el script generará una página html con el calendario para el próximo año. Puede personalizar el inicio exportando START variables. Algo como esto:
 
 ```
 START="2016-04-01" ./generate-calendar.sh > cal.html
@@ -41,9 +30,5 @@ START="2016-04-01" ./generate-calendar.sh > cal.html
 ./calendar.sh 2019-09-01 > cal.html
 ```
 
-Localisation
-------------
-
-To generate calendar, script uses `date` command to get names for the months
-and days of the week. So prior running make sure you have correct locale set
-(utf-8 one).
+## Localisation
+To generate calendar, script uses date command to get names for the months and days of the week. So prior running make sure you have correct locale set (utf-8 one).
