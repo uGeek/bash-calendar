@@ -1,4 +1,4 @@
-* Shell Calendar
+# Shell Calendar
 
 
 This is simple shell script that will generate HTML calendar with
@@ -10,36 +10,36 @@ Files you would need first:
 - picture descriptions [optional] - named `01.txt` - `12.txt`, one for every month
 - optional lists of event
 
-Creating events list
---------------------
+## Creating events list
+
 
 Every event list is in separate file with list extension. It contains
 optional style customization and list of events. Events could be
 reoccurring every year or just specific to one year. Here is example list of
 events:
 
---------------------------------------------------------------------------------
+```
 style=color: red;
 01-01 New Year
 12-25 Christmass
 2016-03-28 Easter Monday
 2017-04-17 Easter Monday
---------------------------------------------------------------------------------
+```
 
-Usage
------
+## Usage
 
 Just put all images in the directory with the script. Optionally put in their
 description and your custom events lists. Then you can simply run the script
 and the script would output html page with calendar for next year. You can
 customize the start by exporting `START` variable. Something like this:
 
+```
+START="2016-04-01" ./generate-calendar.sh > cal.html
+```
 
-~START="2016-04-01" ./generate-calendar.sh > cal.html~
-
-
-=./calendar.sh 2019-09-01 > cal.html=
-
+```
+./calendar.sh 2019-09-01 > cal.html
+```
 
 Localisation
 ------------
