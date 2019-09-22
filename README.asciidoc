@@ -38,7 +38,8 @@ customize the start by exporting `START` variable. Something like this:
 START="2016-04-01" ./generate-calendar.sh > cal.html
 --------------------------------------------------------------------------------
 
-./calendar.sh 2019-09-01 > cal.html
+
+```./calendar.sh 2019-09-01 > cal.html```
 
 
 Localisation
