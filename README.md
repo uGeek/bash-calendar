@@ -30,5 +30,5 @@ START="2016-04-01" ./generate-calendar.sh > cal.html
 ./calendar.sh 2019-09-01 > cal.html
 ```
 
-## Localisation
-To generate calendar, script uses date command to get names for the months and days of the week. So prior running make sure you have correct locale set (utf-8 one).
+## Localización
+Para generar el calendario, el script usa el datecomando para obtener nombres para los meses y días de la semana. Por lo tanto, antes de ejecutarlo, asegúrese de tener el conjunto de configuración regional correcto (utf-8 one).
